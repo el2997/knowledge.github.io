@@ -1,5 +1,3 @@
-HTML CSS JSResult
-EDIT ON
 //////////////settings/////////
 var actionZ = 0; //on left click action
 var rotationA = 3.1; // amount of rotation
