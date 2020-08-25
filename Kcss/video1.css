@@ -1,0 +1,219 @@
+body{
+  background-color: black;
+
+}
+#my_video {
+  height:100%;
+  width: 100%;
+  z-index: 99;
+
+}
+
+#returnLink {
+  position:absolute;
+  top:5%;
+  left:3%;
+  color: white;
+  z-index: 100;
+  font-size: 60px;
+  text-decoration: none;
+  padding: 10px;
+  display: none;
+
+}
+
+#returnLink.hola2 {
+display:block;
+
+}
+#video_controls_bar{
+
+  background: transparent;
+  padding: 10px;
+  height:10%;
+  color: white;
+  font-family: "Gruppo";
+  z-index:100;
+  position: relative;
+  top:-15%;
+  left:0%;
+  opacity: 0.8;
+  display: none;
+
+}
+
+#video_controls_bar.hola{
+  display:block;
+
+}
+
+button{
+
+  transition: transform 80ms ease-in;
+  cursor:pointer;
+}
+button:active{
+  transform: scale(1.1);
+}
+
+
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  -moz-appearance: none;
+  width: 87%; /* Full-width */
+  height: 3px; /* Specified height */
+  background: #d3d3d3;
+  outline: none; /* Remove outline */
+  cursor:pointer;
+  border-radius: 6px;
+  z-index: 99;
+  top:20%;
+  position: absolute;
+
+
+}
+progress {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  -moz-appearance: none;
+  border-radius: 6px;
+  width: 87%; /* Full-width */
+  height: 0px; /* Specified height */
+  outline: none; /* Remove outline */
+  position: absolute;
+  top:22%;
+  z-index: 100;
+
+
+
+
+
+}
+progress[value]::-webkit-progress-bar {
+  background:transparent;
+  border-radius: 6px;
+ /* Full-width */
+  height: 5px; /* Specified height */
+  outline: none; /* Remove outline */
+  border-radius: 6px;
+  z-index:100;
+
+
+
+}
+progress[value]::-webkit-progress-value {
+  background: linear-gradient(#000088, #000044);
+
+}
+
+
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: linear-gradient(#000088, #000044);
+  border-radius: 10px;
+  cursor: pointer; /* Cursor on hover */
+  padding:5px;
+
+}
+
+.slider::-moz-range-progress {
+  height: 3px;
+  background: #0000ff;
+
+}
+
+#vol{
+  cursor:pointer;
+  border-radius: 6px;
+  z-index: 100;
+  top:-35%;
+  position: absolute;
+  left:12%;
+  transform: rotate(270deg);
+  background:radial-gradient(#000088, #000044);
+  padding-bottom: 12px;
+  padding-top: 5px;
+  padding-right: 5px;
+  display:none;
+
+
+}
+#vol.appear{
+
+  display:block;
+  -webkit-transition-delay: 5s;
+
+}
+#volumeslider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  -moz-appearance: none;
+  width: 100%; /* Full-width */
+  height: 3px; /* Specified height */
+  background: #d3d3d3;
+  outline: none; /* Remove outline */
+
+
+
+
+}
+#volumeslider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #0000ff; /* Green background */
+  border-radius: 10px;
+  cursor: pointer; /* Cursor on hover */
+  padding:5px;
+
+}
+
+
+
+#curtimetext {
+  position: absolute;
+  left: 90%;
+
+}
+#durtimetext{
+ position: absolute;
+ left: 94.5%;
+
+}
+#dumbSlash{
+ position: absolute;
+ left: 93.5%;
+
+}
+#video_player_box{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: black;
+  margin: 0px auto;
+}
+
+#playpausebtn {
+  position: absolute;
+  top:60%;
+  left: 1%;
+
+}
+
+#mutebtn {
+  position: absolute;
+  top:60%;
+  left: 15%;
+}
+
+#fullscreenbtn {
+  position: absolute;
+  top:60%;
+  left: 90%;
+}
